@@ -1,8 +1,8 @@
 language: java
 before_install:
-- chmod +x gradlew
+  - chmod +x gradlew
 jdk:
-- oraclejdk8
+  - oraclejdk8
 branches:
   only:
   - master
@@ -10,7 +10,7 @@ cache:
   directories:
   - "$HOME/.gradle"
 script:
-- "./gradlew clean build"
+  - "./gradlew clean build"
 notifications:
   slack:
     rooms:

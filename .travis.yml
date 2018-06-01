@@ -5,10 +5,10 @@ jdk:
   - oraclejdk8
 branches:
   only:
-  - master
+    - master
 cache:
   directories:
-  - "$HOME/.gradle"
+    - "$HOME/.gradle"
 script:
   - "./gradlew clean build"
 notifications:

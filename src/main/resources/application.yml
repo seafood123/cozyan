@@ -2,10 +2,12 @@ spring:
  application:
    name: student-service
  datasource:
-     initialize: false
-     sql-script-encoding: UTF-8
-     driverClassName: org.mariadb.jdbc.Driver
-     url: jdbc:${JAWSDB_MARIA_URL}
+    initialize: false
+    sql-script-encoding: UTF-8
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:${JAWSDB_MARIA_URL}
+    tomcat:
+    max-active: 5
 
  jpa:
      hibernate:
